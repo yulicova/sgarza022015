@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<style>
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+li {
+	float: left;
+	width: 100px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+li a {
+	display: block;
+	padding: 5px;
+	height: 100%;
+	color: #FFF;
+	text-decoration: none;
+	border-right: 1px solid #FFF;
+}
+
+li a {
+	background: url(MyStuff/q1.jpg) repeat 0 0;
+}
+
+li a:hover {
+	background-position: 50px 0;
+}
+</style>
+
+<meta charset="utf-8">
+<title>help me</title>
+</head>
+
+<body>
+
+<ul>
+	<li><a href="#"></a></li>
+    <li><a href="#"></a></li>
+    <li><a href="#"></a></li>
+</ul>
+
+<script src="MyStuff/jquery-1.11.3.min.js"></script>
+<script src="MyStuff/jquery.bgpos.js"></script>
+
+<script>
+$('#yes')
+	.css( {backgroundPosition: "0 0"} )
+	.mouseover(function(){
+		$(this).stop().animate(
+			{backgroundPosition:"(0 -51px)"}, 
+			{duration:500})
+		})
+	.mouseout(function(){
+		$(this).stop().animate(
+			{backgroundPosition:"(0 0)"}, 
+			{duration:500})
+		})
+</script>
+</body>
+</html>
